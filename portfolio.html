@@ -11,39 +11,44 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a href="./index.html" class="link logo"><span class="logo-header">Web</span>Studio</a>
+    <header class="header">
+      <div class="container">
+      <a href="./index.html" class="link logo logo-marg"><span class="logo-header">Web</span>Studio</a>
       <nav class="text-nav">
-        <ul class="list">
-          <li><a href="./index.html" class="link">студия</a></li>
-          <li><a href="./portfolio.html" class="link accent-pege">портфолио</a></li>
-          <li><a href="" class="link">контакты</a></li>
+        <ul class="menu list">
+          <li class="menu-item"><a href="./index.html" class="link">студия</a></li>
+          <li class="menu-item"><a href="./portfolio.html" class="link accent-pege">портфолио</a></li>
+          <li class="menu-item"><a href="" class="link">контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="list">
-        <li><a class="link text-nav contacts" href="mailto:info@devstudio">info@devstudio</a></li>
+      <ul class="menu list contacts-marg">
+        <li class="mail-marg"><a class="link text-nav contacts" href="mailto:info@devstudio">info@devstudio</a></li>
         <li><a class="link text-nav contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
 
     <!--секцыя шапка-->
     <main>
-      <section>
+      <section class="section section-filtr">
+        <div class="container">
         <h1 class="visually-hidden">навігація</h1>
-        <ul class="list">
-          <li><button class="btn-filtr" type="button">Все</a></button>
-          <li><button class="btn-filtr" type="button">Веб-сайты</a></button>
-          <li><button class="btn-filtr" type="button">Приложения</a></button>
-          <li><button class="btn-filtr" type="button">Дизайн</a></button>
-          <li><button class="btn-filtr" type="button">Маркетинг</a></button>
+        <ul class="list menu">
+          <li class="btn-filtr"><button class="button" type="button">Все</a></button>
+          <li class="btn-filtr"><button class="button" type="button">Веб-сайты</a></button>
+          <li class="btn-filtr"><button class="button" type="button">Приложения</a></button>
+          <li class="btn-filtr"><button class="button" type="button">Дизайн</a></button>
+          <li class="btn-filtr"><button class="button" type="button">Маркетинг</a></button>
         </ul>
+      </div>
       </section>
 
-      <section>
+      <section class="section section-portfolio">
+        <div class="container">
         <h2 class="visually-hidden">портфоліо</h2>
-        <ul class="list">
-          <li>
+        <ul class="list card-set">
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/tehnokryik.jpg"
               alt="Технокряк"
@@ -53,7 +58,7 @@
             <h3 class="title-portfolio">Технокряк</h3>
             <p class="text-portfolio">Веб-сайт</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/new-orlean.jpg"
               alt="Постер New Orlean vs Golden Star"
@@ -63,7 +68,7 @@
             <h3 class="title-portfolio">Постер New Orlean vs Golden Star</h3>
             <p class="text-portfolio">Дизайн</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/seafood.jpg"
               alt="Ресторан Seafood"
@@ -73,7 +78,7 @@
             <h3 class="title-portfolio">Ресторан Seafood</h3>
             <p class="text-portfolio">Приложение</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/prime.jpg"
               alt="Проект Prime"
@@ -83,7 +88,7 @@
             <h3 class="title-portfolio">Проект Prime</h3>
             <p class="text-portfolio">Маркетинг</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/boxes.jpg"
               alt="Проект Boxes"
@@ -93,7 +98,7 @@
             <h3 class="title-portfolio">Проект Boxes</h3>
             <p class="text-portfolio">Приложение</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/borders.jpg"
               alt="Inspiration has no Borders"
@@ -103,7 +108,7 @@
             <h3 class="title-portfolio">Inspiration has no Borders</h3>
             <p class="text-portfolio">Веб-сайт</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/limited.jpg"
               alt="Издание Limited Edition"
@@ -113,7 +118,7 @@
             <h3 class="title-portfolio">Издание Limited Edition</h3>
             <p class="text-portfolio">Дизайн</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/lab.jpg"
               alt="Проект LAB"
@@ -123,7 +128,7 @@
             <h3 class="title-portfolio">Проект LAB</h3>
             <p class="text-portfolio">Маркетинг</p>
           </li>
-          <li>
+          <li class="item work-item">
             <img
               src="./imeges/img-portfolio/growing.jpg"
               alt="Growing Business"
@@ -134,6 +139,7 @@
             <p class="text-portfolio">Приложение</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!--футер-->
