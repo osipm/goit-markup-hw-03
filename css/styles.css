@@ -8,10 +8,19 @@
     --title-text-cl:'Raleway', sans-serif;
 
     --blak-bg:#2F303A;
-    --bg:#F5F4FA;
+    --gray-bg:#F5F4FA;
     --bg:#E5E5E5;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 
 
@@ -21,6 +30,29 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--mein-text-cl)}
+
+h1,
+h2,
+h3,
+p{margin-top: 0;}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
+
+.header .container {
+  display: flex;
+  align-items: center;
+ }
 
 .link{
     color: var(--title-cl);
@@ -37,6 +69,11 @@ body{
     letter-spacing: 0.03em;
     }
 
+.logo-marg{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -48,10 +85,18 @@ body{
     overflow: hidden;
 }
 
-.logo-header{color:var(--link-cl);}
+.logo-header {color:var(--link-cl);}
 
-.list{list-style: none;}
+.list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;}
 
+.menu {display: inline-flex;}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
 .address{font-style:inherit;}
 
 .text-nav{
@@ -65,8 +110,13 @@ body{
 
 .contacts{
     color: var(--title-cl);}
-    
-    .main-title{
+
+.contacts-marg{
+    margin-left: auto;
+}
+.mail-marg{margin-right: 50px;}
+
+.main-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -87,14 +137,42 @@ body{
 
 }
 
+.team{background-color: var(--gray-bg);}
+.team-work{background-color: var(--bg);}
+
 .title-section{
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-title-cl);
+    color: var(--title-cl);
+}
 
+.item {
+  margin-left: 30px;
+  margin-top: 30px;}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.feature-item{
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    text-align: left;  
+}
+
+.work-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.team-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    text-align: center;
 }
 
 .title-text{
