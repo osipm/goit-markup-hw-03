@@ -248,11 +248,13 @@ p {
     line-height: 1.18;
 }
 
-.footer {
+.footer-bg {
     background-color: var(--blak-bg);
+}
+
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
 }
 
 .Studio-cl {
